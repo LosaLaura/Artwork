@@ -15,14 +15,15 @@
     }
     #viewport {
       width: 100vw;
-      height: 100vh;
+      height: 100dvh;
       overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: grab;
+      background-color: #000;
       background-image: url("background.png");
-      background-size: 100% 100%;
+      background-size: contain;
       background-repeat: no-repeat;
       image-rendering: pixelated;
     }
@@ -31,8 +32,8 @@
     }
     #yurrr {
       position: relative;
-      width: min(100vw, 177.78vh);
-      height: min(100vh, 56.25vw);
+      width: min(100vw, 177.78dvh);
+      height: min(100dvh, 56.25vw);
       transform-origin: center center;
     }
     #yurrr img {
